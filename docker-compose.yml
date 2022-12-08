@@ -1,10 +1,8 @@
 version: '3'
 services:
-  #php用コンテナ
-  php:
-    container_name: php-apache
-    build: ./php
+  httpd:
+    image: php:7.4-apache
     volumes:
-      - ./html:/var/www/html
+      - '.:/var/www/html'
     ports:
-      - 8080:80
+      - '80:80'
