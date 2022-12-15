@@ -55,7 +55,7 @@
           <div class="tweet-container-bottom">
             {foreach from=$content->statuses item=elem}
               <p class="tweets-content">{$elem->text}</p>
-              <p class="tweet-time">{$elem->created_at|date_format:"Y年m月d日 H:i:s タイムゾーン:e"}</p>
+              <p class="tweet-time">{$elem->created_at|date_format:"Y年m月d日 H:i:s"}</p>
               <hr class="tweet-hr">
             {/foreach}
           </div>

@@ -55,7 +55,6 @@
             {foreach from=$content item=elem}
               <p class="tweets-content">{$elem->text}</p>
               <p class="tweet-time">
-                {* {$elem->created_at|date_format:"%Y/%m/%d %H:%M:%S"|strtotime|date_format:"Y年m月d日 H:i:s"} *}
                 {$elem->created_at|date_format:"Y年m月d日 H:i:s"}
               </p>
               {* <p class="tweet-time">{include file='tweet_time.tpl' created_at=$elem->created_at}</p> *}
