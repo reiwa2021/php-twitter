@@ -60,9 +60,11 @@
             {/foreach}
           </div>
         </div>
-
       {/foreach}
     </div>
+    {* <div class="back-area"> *}
+    <p class="back-p"><a href="JavaScript:history.back()" class="link-underline">戻る</a></p>
+    {* </div> *}
     <hr class="copylight-hr">
     <div id="footter-area">
       <div class="admin-link">

@@ -241,6 +241,12 @@ body {
   margin: 3px auto 30px;
 }
 
+/* 戻るリンク */
+.back-p {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+}
 
 /* エラーメッセージエリア */
 .error-area {
@@ -263,12 +269,3 @@ body {
     display: none;
   }
 }
-
-
-/* 画面幅がスマホの横サイズが599以下の場合 */
-/* タイトルの文字を縮小します。 */
-/* @media screen and (max-width: 599px) {
-  .main-title {
-    font-size: 5vh;
-  }
-} */
