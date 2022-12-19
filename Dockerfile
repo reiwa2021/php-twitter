@@ -6,6 +6,6 @@ RUN apt-get update && apt-get install -y \
   zip \
   unzip
 COPY --from=composer:2.0 /usr/bin/composer /usr/bin/composer
-VOLUME . /var/www/html
+COPY . /var/www/html
 RUN cd /var/www/html
 RUN composer install
